@@ -4,7 +4,7 @@ In this first section, your task is to initialize the database and seed it with 
 You can test your work as you go along with `npm run test:database`.
 
 1. Create a new PostgreSQL database named `fullstack_employees`.
-2. In `schema.sql`, write SQL to create an `employees` table according to the following schema.
+2. In `schema.sql`, writeSQL to create an `employees` table according to the following schema.
 
 ![](./schema.svg)
 

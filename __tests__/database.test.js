@@ -13,7 +13,7 @@ afterAll(async () => {
 
 describe('"employees" table', () => {
   it("is created", async () => {
-    const sql = `
+    constSQL = `
     SELECT table_name
     FROM information_schema.tables
     WHERE table_name = 'employees'
@@ -26,7 +26,7 @@ describe('"employees" table', () => {
     let columns;
 
     beforeAll(async () => {
-      const sql = `
+      constSQL = `
       SELECT column_name, data_type, is_nullable, column_default
       FROM information_schema.columns
       WHERE table_name = 'employees'
@@ -68,7 +68,7 @@ describe('"employees" table', () => {
   });
 
   it("is seeded with at least 10 employees", async () => {
-    const sql = "SELECT * FROM employees";
+    constSQL = "SELECT * FROM employees";
     const { rows } = await db.query(sql);
     expect(rows.length).toBeGreaterThanOrEqual(10);
   });
