@@ -1,3 +1,5 @@
 import pg from "pg";
-const db = new pg.Client(process.env.DATABASE_URL);
-export default db;
+const client = new pg.Client({
+  database: "fullstack_employees",
+});
+export default client;
